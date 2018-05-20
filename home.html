@@ -4,7 +4,8 @@
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="home.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i" rel="stylesheet">
+
         <title>Silent's Workshop</title>
         <script>
         
@@ -27,6 +28,8 @@
                     document.getElementById("next").style.marginLeft = (document.getElementById("lisbon").clientWidth - 111) + "px";
 
                     document.getElementById("bullets").style.marginLeft = ((document.getElementById("lisbon").clientWidth - 131) / 2) + "px";
+
+                    document.getElementById("lisbon").style.backgroundSize = windowWidth + "px " + windowHeight + "px";
 
                 }
 
@@ -172,6 +175,8 @@
 
             document.getElementById("lisbon").style.height = windowHeight + "px";
             document.getElementById("lisbon").style.width = windowWidth + "px";
+
+            document.getElementById("lisbon").style.backgroundSize = windowWidth + "px " + windowHeight + "px";
 
             document.getElementById("top-menu").style.marginLeft = ((windowWidth - 677) / 2) + "px";
             document.getElementById("center-text").style.marginTop = ((windowHeight - 347) / 2) + "px";

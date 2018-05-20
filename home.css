@@ -17,7 +17,7 @@ body {
 #lisbon {
 
     position:absolute;
-    background-image:url("resources/lisbonSprite.png");
+    background-image:url("resources/lisbon-1.png");
     z-index: 0;
     background-position: 0px 0px;
     background-repeat:no-repeat;
