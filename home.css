@@ -221,3 +221,11 @@ body {
     cursor:pointer;
 
 }
+
+#project-container {
+
+    height:400px;
+    background-color:white;
+    position:absolute;
+
+}
