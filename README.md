@@ -1,2 +1,3 @@
-# website
-Website Source Code
+# Website
+All source code of my personal website is open for use.
+
