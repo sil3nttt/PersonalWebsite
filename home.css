@@ -17,7 +17,7 @@ body {
 #lisbon {
 
     position:absolute;
-    background-image:url("resources/lisbon-1.png");
+    background-image:url("resources/lisbonSprite.png");
     z-index: 0;
     background-position: 0px 0px;
     background-repeat:no-repeat;
@@ -127,7 +127,7 @@ body {
 
     color:#ebebeb;
     position:absolute;
-    width:100%;
+    width:800px;
     text-align:center;
     animation-name: pageLoad;
     animation-duration: 1s;
