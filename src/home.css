@@ -17,10 +17,11 @@ body {
 #lisbon {
 
     position:absolute;
-    background-image:url("resources/lisbonSprite.png");
+    background-image:url("../resources/lisbonSprite.png");
     z-index: 0;
     background-position: 0px 0px;
     background-repeat:no-repeat;
+    border-bottom:5px solid #0090ff;
 
 }
 
@@ -113,6 +114,7 @@ body {
 
 #top-menu {
     
+    display:none;
     height:70px;
     position:absolute;
     margin-top:50px;
@@ -148,6 +150,7 @@ body {
 
 #code {
     
+    display:none;
     font-size:130px;
     margin:0;
     padding:0;
@@ -224,8 +227,35 @@ body {
 
 #project-container {
 
-    height:400px;
-    background-color:white;
+    height:1000px;
+    background-color:#f1f1f1;
     position:absolute;
+
+}
+
+#projectBoxesContainer {
+
+    margin-top:100px;
+    width:1465px;
+    height:619px;
+    background-color:green;
+
+}
+
+#project-one {
+
+    position:absolute;
+    background-color:black;
+    width:401px;
+    height:569px;
+
+}
+
+#project-two {
+
+    position:relative;
+    background-color:black;
+    width:401px;
+    height:569px;
 
 }
