@@ -1,0 +1,231 @@
+body {
+
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+#head {
+
+    margin:0px;
+    padding:0px;
+    background-size:cover;
+
+}
+
+#lisbon {
+
+    position:absolute;
+    background-image:url("resources/lisbonSprite.png");
+    z-index: 0;
+    background-position: 0px 0px;
+    background-repeat:no-repeat;
+
+}
+
+.menuItem {
+
+    color:#ebebeb;
+    line-height:70px;
+    vertical-align:center;
+    padding-top:22px;
+    padding-bottom:22px;
+    padding-right:45px;
+    padding-left:45px;
+    font-weight:300;
+    font-size:20px;
+
+}
+
+.menuItem:hover {
+
+    animation-name: menuBackground;
+    animation-duration: 0.3s;
+    animation-fill-mode:forwards;
+    cursor:pointer;
+    text-decoration:underline;
+
+}
+
+@-moz-keyframes menuBackground {
+    
+    from {}
+    to {background-color:rgba(255, 255, 255,0.15);}
+    
+}
+
+@-webkit-keyframes menuBackground {
+    
+    from {}
+    to {background-color:rgba(255, 255, 255,0.15);}
+    
+}
+
+@keyframes menuBackground {
+
+    from {}
+    to {background-color:rgba(255, 255, 255,0.15);}
+
+}
+
+@-moz-keyframes pageLoad {
+    
+    from {opacity: 0}
+    to {opacity: 1}
+    
+}
+
+@-webkit-keyframes pageLoad {
+    
+    from {opacity: 0}
+    to {opacity: 1}
+    
+}
+
+@keyframes pageLoad {
+
+    from {opacity: 0}
+    to {opacity: 1}
+
+}
+
+@-moz-keyframes opacityChanger {
+    
+    from {opacity: 0.2}
+    to {opacity: 0.6}
+    
+}
+
+@-webkit-keyframes opacityChanger {
+    
+    from {opacity: 0.2}
+    to {opacity: 0.6}
+    
+}
+
+@keyframes opacityChanger {
+
+    from {opacity: 0.2}
+    to {opacity: 0.6}
+
+}
+
+#top-menu {
+    
+    height:70px;
+    position:absolute;
+    margin-top:50px;
+    width:677px;
+    animation-name: pageLoad;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+    
+}
+
+#center-text {
+
+    color:#ebebeb;
+    position:absolute;
+    width:800px;
+    text-align:center;
+    animation-name: pageLoad;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+    z-index:0;
+
+}
+
+#hello-world {
+
+    font-size:150px;
+    margin:0;
+    padding:0;
+    font-weight:300;
+    text-shadow: 2px 2px 20px rgba(0,0,0,0.8);
+
+}
+
+#code {
+    
+    font-size:130px;
+    margin:0;
+    padding:0;
+    margin-top:-55px;
+    font-weight:300;
+    text-shadow: 2px 2px 20px rgba(0,0,0,0.8);
+    
+}
+
+#previous {
+
+    position:absolute;
+    width:50px;
+    height:100px;
+    opacity:0.2;
+    margin-left:15px;
+    z-index:1;
+
+}
+
+#previous:hover {
+    
+    animation-name: opacityChanger;
+    animation-duration: 0.3s;
+    animation-fill-mode:forwards;
+    cursor:pointer;
+    
+}
+
+#next {
+
+    position:absolute;
+    width:50px;
+    height:100px;
+    opacity:0.2;
+    z-index:2;
+
+}
+
+#next:hover {
+
+    animation-name: opacityChanger;
+    animation-duration: 0.3s;
+    animation-fill-mode:forwards;
+    cursor:pointer;
+
+}
+
+#bullets {
+
+    position:absolute;
+
+}
+
+#photos-credit {
+
+    text-decoration:none;
+    color: #ebebeb;
+    position:absolute;
+    left:5px;
+    bottom:5px;
+    opacity:0.2;
+
+}
+
+#photos-credit:hover {
+
+    animation-name: opacityChanger;
+    animation-duration: 0.3s;
+    animation-fill-mode:forwards;
+    cursor:pointer;
+
+}
+
+#project-container {
+
+    height:400px;
+    background-color:white;
+    position:absolute;
+
+}
