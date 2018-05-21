@@ -122,6 +122,7 @@ body {
     animation-name: pageLoad;
     animation-duration: 1s;
     animation-fill-mode:forwards;
+    z-index: 6;
     
 }
 
@@ -129,7 +130,7 @@ body {
 
     color:#ebebeb;
     position:absolute;
-    width:800px;
+    width:100%;
     text-align:center;
     animation-name: pageLoad;
     animation-duration: 1s;
@@ -140,7 +141,7 @@ body {
 
 #hello-world {
 
-    font-size:150px;
+    vertical-align: middle;
     margin:0;
     padding:0;
     font-weight:300;
@@ -151,10 +152,8 @@ body {
 #code {
     
     display:none;
-    font-size:130px;
-    margin:0;
-    padding:0;
-    margin-top:-55px;
+    margin-top:0px;
+    padding-top:0px;
     font-weight:300;
     text-shadow: 2px 2px 20px rgba(0,0,0,0.8);
     
