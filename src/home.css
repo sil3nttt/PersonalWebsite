@@ -122,6 +122,7 @@ body {
     animation-name: pageLoad;
     animation-duration: 1s;
     animation-fill-mode:forwards;
+    z-index: 6;
     
 }
 
