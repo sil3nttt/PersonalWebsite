@@ -25,10 +25,25 @@
                     document.getElementById("top-menu").style.marginLeft = ((windowWidth - 677) / 2) + "px";
                     document.getElementById("next").style.marginLeft = (document.getElementById("lisbon").clientWidth - 111) + "px";
                     document.getElementById("bullets").style.marginLeft = ((document.getElementById("lisbon").clientWidth - 131) / 2) + "px";
-                    document.getElementById("project-container").style.width = (document.getElementById("lisbon").clientWidth) + "px";
-                    document.getElementById("projectBoxesContainer").style.marginLeft = ((windowWidth - 1465) / 2) + "px";
                     document.getElementById("project-two").style.marginLeft = ((document.getElementById("projectBoxesContainer").clientWidth - 401) / 2) + "px";
                     document.getElementById("hello-world").style.fontSize = (windowWidth / 14) + "px";
+                    document.getElementById("project-container").style.width = (document.getElementById("lisbon").clientWidth) + "px";
+                    document.getElementById("project-container").style.marginTop = ((document.getElementById("lisbon").clientHeight) + 5) + "px";
+                    document.getElementById("projectBoxesContainer").style.width = (0.9 * windowWidth) + "px";
+                    document.getElementById("projectBoxesContainer").style.height = (0.3 * windowWidth) + "px";
+                    document.getElementById("projectBoxesContainer").style.marginLeft = (0.05 * windowWidth) + "px";
+                    document.getElementById("project-one").style.width = (0.25 * document.getElementById("projectBoxesContainer").offsetWidth) + "px";
+                    document.getElementById("project-one").style.height = (0.3 * windowWidth) + "px";
+                    document.getElementById("project-two").style.width = (0.25 * document.getElementById("projectBoxesContainer").offsetWidth) + "px";
+                    document.getElementById("project-two").style.height = (0.3 * windowWidth) + "px";
+                    document.getElementById("project-two").style.marginLeft = (document.getElementById("project-one").offsetWidth + 0.125 * document.getElementById("projectBoxesContainer").offsetWidth) + "px";
+                    document.getElementById("project-three").style.width = (0.25 * document.getElementById("projectBoxesContainer").offsetWidth) + "px";
+                    document.getElementById("project-three").style.height = (0.3 * windowWidth) + "px";
+                    document.getElementById("project-three").style.marginLeft = ((document.getElementById("project-one").offsetWidth * 2) + 0.25 * document.getElementById("projectBoxesContainer").offsetWidth) + "px";
+                    document.getElementById("projectBoxesContainer").style.marginTop = (windowWidth / 15) + "px";
+                    document.getElementById("stock-1").width = document.getElementById("project-one").offsetWidth;
+                    document.getElementById("stock-2").width = document.getElementById("project-two").offsetWidth;
+                    document.getElementById("stock-3").width = document.getElementById("project-three").offsetWidth;
 
                 }
 
@@ -163,7 +178,7 @@
             
 
                 document.getElementById("lisbon").style.height = windowHeight + "px";
-                document.getElementById("lisbon").style.width = windowWidth + "px";
+                document.getElementById("lisbon").style.width = (windowWidth - 16) + "px";
 
             
             </script>
@@ -232,23 +247,62 @@
 
             <div id="projectBoxesContainer">
                 
-                <script>document.getElementById("projectBoxesContainer").style.marginLeft = ((windowWidth - 1465) / 2) + "px";</script>
+                <script>
+                
+                    document.getElementById("projectBoxesContainer").style.width = (0.9 * windowWidth) + "px";
+                    document.getElementById("projectBoxesContainer").style.height = (0.3 * windowWidth) + "px";
+                    document.getElementById("projectBoxesContainer").style.marginLeft = (0.05 * windowWidth) + "px";
+                    document.getElementById("projectBoxesContainer").style.marginTop = (windowWidth / 15) + "px";
+
+                </script>
 
                 <div id="project-one">
 
+                    <img id="stock-1" src="../resources/stock-1.png" alt="Oops! Something went wrong!">
 
+                    <script>
+                        
+                        document.getElementById("project-one").style.width = (0.27 * document.getElementById("projectBoxesContainer").offsetWidth) + "px";
+                        document.getElementById("project-one").style.height = (0.3 * windowWidth) + "px";
+
+                        document.getElementById("stock-1").width = document.getElementById("project-one").offsetWidth;
+                    
+                    </script>
 
                 </div>
 
                 <div id="project-two">
 
-                    <script>document.getElementById("project-two").style.marginLeft = ((document.getElementById("projectBoxesContainer").clientWidth - 401) / 2) + "px";</script>
+                    <img id="stock-2" src="../resources/stock-2.jpg" alt="Oops! Something went wrong!">
+
+                    <script>
+                
+                        document.getElementById("project-two").style.width = (0.27 * document.getElementById("projectBoxesContainer").offsetWidth) + "px";
+                        document.getElementById("project-two").style.height = (0.3 * windowWidth) + "px";
+                        document.getElementById("project-two").style.marginLeft = (document.getElementById("project-one").offsetWidth + 0.095 * document.getElementById("projectBoxesContainer").offsetWidth) + "px";
+                    
+                        document.getElementById("stock-2").width = document.getElementById("project-two").offsetWidth;
+
+                    </script>
 
                 </div>
 
                 <div id="project-three">
 
-                    
+                    <img id="stock-3" src="../resources/stock-3.jpg" alt="Oops! Something went wrong!">
+
+                    <p style="text-align:center;color: #4e4e4e">Project 1</p>
+                    <hr>
+
+                    <script>
+                
+                        document.getElementById("project-three").style.width = (0.27 * document.getElementById("projectBoxesContainer").offsetWidth) + "px";
+                        document.getElementById("project-three").style.height = (0.3 * windowWidth) + "px";
+                        document.getElementById("project-three").style.marginLeft = ((document.getElementById("project-one").offsetWidth * 2) + 0.19 * document.getElementById("projectBoxesContainer").offsetWidth) + "px";
+
+                        document.getElementById("stock-3").width = document.getElementById("project-three").offsetWidth;
+
+                    </script>
 
                 </div>
 

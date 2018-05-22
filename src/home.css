@@ -214,37 +214,118 @@ body {
 
 }
 
+
 #project-container {
 
     height:1000px;
-    background-color:#f1f1f1;
+    background-color:#ececec;
     position:absolute;
-
-}
-
-#projectBoxesContainer {
-
-    margin-top:100px;
-    width:1465px;
-    height:619px;
-    background-color:green;
 
 }
 
 #project-one {
 
+    background-color:#e6e6e6;
+    border-radius:2px;
+    height:619px;
     position:absolute;
-    background-color:black;
-    width:401px;
-    height:569px;
+    transition: border 1s;
+    -webkit-transition: border 0.5s;
+    border:1px solid transparent;
+    -moz-transition: border 0.5s;
+    -o-transition: border 0.5s;
 
 }
 
 #project-two {
 
-    position:relative;
-    background-color:black;
-    width:401px;
-    height:569px;
+    background-color:#e6e6e6;
+    border-radius:2px;
+    border:1px solid rgba('0,0,0,0.2');
+    height:619px;
+    position:absolute;
+    transition: border 1s;
+    -webkit-transition: border 0.5s;
+    border:1px solid transparent;
+    -moz-transition: border 0.5s;
+    -o-transition: border 0.5s;
+
+}
+
+#project-three {
+
+    background-color:#e6e6e6;
+    border-radius:2px;
+    border:1px solid rgba('0,0,0,0.2');
+    height:619px;
+    position:absolute;
+    transition: border 1s;
+    -webkit-transition: border 0.5s;
+    border:1px solid transparent;
+    -moz-transition: border 0.5s;
+    -o-transition: border 0.5s;
+
+}
+
+#project-one:hover {
+
+    border:1px solid #66ceff;
+    transition: border 1s;
+    -webkit-transition: border 0.5s;
+    -moz-transition: border 0.5s;
+    -o-transition: border 0.5s;
+
+}
+
+#project-two:hover {
+
+    border:1px solid #ffdd66;
+    transition: border 1s;
+    -webkit-transition: border 0.5s;
+    -moz-transition: border 0.5s;
+    -o-transition: border 0.5s;
+
+}
+
+#project-three:hover {
+
+    border:1px solid #71ff66;
+    transition: border 1s;
+    -webkit-transition: border 0.5s;
+    -moz-transition: border 0.5s;
+    -o-transition: border 0.5s;
+
+}
+
+#stock-1 {
+
+    border-radius:2px;
+    border-bottom-left-radius:0px;
+    border-bottom-right-radius:0px;
+
+}
+
+#stock-2 {
+
+    border-radius:2px;
+    border-bottom-left-radius:0px;
+    border-bottom-right-radius:0px;
+
+}
+
+#stock-3 {
+
+    border-radius:2px;
+    border-bottom-left-radius:0px;
+    border-bottom-right-radius:0px;
+
+}
+
+hr {
+
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    opacity:0.2;
 
 }
