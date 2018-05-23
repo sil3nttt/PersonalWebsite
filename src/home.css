@@ -330,3 +330,47 @@ hr {
     opacity:0.2;
 
 }
+
+#tutorials-section {
+
+    height:1000px;
+    position:absolute;
+    background-color:black;
+
+}
+
+#tutorial-one {
+
+    position:absolute;
+    background-image:url("../resources/tile-1.jpg");
+    background-size:contain;
+    background-repeat:no-repeat;
+
+}
+
+#tutorial-two {
+
+    position:absolute;
+    background-image:url("../resources/tile-2.jpg");
+    background-size:contain;
+    background-repeat:no-repeat;
+
+}
+
+#tutorial-three {
+
+    position:absolute;
+    background-image:url("../resources/tile-3.jpg");
+    background-size:contain;
+    background-repeat:no-repeat;
+
+}
+
+#tutorial-four {
+
+    background-image: url("../resources/tile-4.png");
+    position: absolute;
+    background-size:contain;
+    background-repeat:no-repeat;
+
+}
