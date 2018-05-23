@@ -28,7 +28,7 @@
                     document.getElementById("project-two").style.marginLeft = ((document.getElementById("projectBoxesContainer").clientWidth - 401) / 2) + "px";
                     document.getElementById("hello-world").style.fontSize = (windowWidth / 14) + "px";
                     document.getElementById("project-container").style.width = (document.getElementById("lisbon").clientWidth) + "px";
-                    document.getElementById("project-container").style.marginTop = ((document.getElementById("lisbon").clientHeight) + 5) + "px";
+                    document.getElementById("project-container").style.marginTop = (document.getElementById("lisbon").clientHeight) + "px";
                     document.getElementById("projectBoxesContainer").style.width = (0.9 * windowWidth) + "px";
                     document.getElementById("projectBoxesContainer").style.height = (0.3 * windowWidth) + "px";
                     document.getElementById("projectBoxesContainer").style.marginLeft = (0.05 * windowWidth) + "px";
@@ -44,6 +44,9 @@
                     document.getElementById("stock-1").width = document.getElementById("project-one").offsetWidth - 2;
                     document.getElementById("stock-2").width = document.getElementById("project-two").offsetWidth - 2;
                     document.getElementById("stock-3").width = document.getElementById("project-three").offsetWidth - 2;
+                    document.getElementById("project-title-one").style.fontSize = (windowWidth / 90) + "px";
+                    document.getElementById("project-title-two").style.fontSize = (windowWidth / 90) + "px";
+                    document.getElementById("project-title-three").style.fontSize = (windowWidth / 90) + "px";
 
                 }
 
@@ -241,7 +244,7 @@
             <script>           
             
                 document.getElementById("project-container").style.width = (document.getElementById("lisbon").clientWidth) + "px";
-                document.getElementById("project-container").style.marginTop = ((document.getElementById("lisbon").clientHeight) + 5) + "px";
+                document.getElementById("project-container").style.marginTop = (document.getElementById("lisbon").clientHeight) + "px";
                 
             </script>
 
@@ -260,7 +263,7 @@
 
                     <img id="stock-1" src="../resources/stock-1.png" alt="Oops! Something went wrong!">
 
-                    <p style="text-align:center;color: #4e4e4e">Project 1</p>
+                    <p id="project-title-one" style="text-align:center;color: #4e4e4e">Soon<sup>TM</sup></p>
                     <hr>
 
                     <script>
@@ -278,7 +281,10 @@
 
                     <img id="stock-2" src="../resources/stock-2.jpg" alt="Oops! Something went wrong!">
 
-                    <p style="text-align:center;color: #4e4e4e">Project 2</p>
+                    <p id="project-title-two" style="text-align:center;color: #4e4e4e">Soon<sup>TM</sup></p>
+
+                    <script>document.getElementById("")</script>
+
                     <hr>
 
                     <script>
@@ -297,7 +303,7 @@
 
                     <img id="stock-3" src="../resources/stock-3.jpg" alt="Oops! Something went wrong!">
 
-                    <p style="text-align:center;color: #4e4e4e">Project 3</p>
+                    <p id="project-title-three" class="project-titles" style="text-align:center;color: #4e4e4e">Soon<sup>TM</sup></p>
                     <hr>
 
                     <script>
@@ -307,6 +313,10 @@
                         document.getElementById("project-three").style.marginLeft = ((document.getElementById("project-one").offsetWidth * 2) + 0.19 * document.getElementById("projectBoxesContainer").offsetWidth) + "px";
 
                         document.getElementById("stock-3").width = document.getElementById("project-three").offsetWidth - 2;
+
+                        document.getElementById("project-title-one").style.fontSize = (windowWidth / 90) + "px";
+                        document.getElementById("project-title-two").style.fontSize = (windowWidth / 90) + "px";
+                        document.getElementById("project-title-three").style.fontSize = (windowWidth / 90) + "px";
 
                     </script>
 

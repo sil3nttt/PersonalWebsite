@@ -21,7 +21,6 @@ body {
     z-index: 0;
     background-position: 0px 0px;
     background-repeat:no-repeat;
-    border-bottom:5px solid #0090ff;
 
 }
 
@@ -200,7 +199,6 @@ body {
     color: #ebebeb;
     position:absolute;
     left:5px;
-    bottom:5px;
     opacity:0.2;
 
 }
