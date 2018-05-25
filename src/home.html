@@ -3,6 +3,7 @@
     <head>
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="jquery.scrollTo.min.js"></script>
         <link rel="stylesheet" type="text/css" href="home.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i" rel="stylesheet">
 
@@ -47,6 +48,22 @@
                     document.getElementById("project-title-one").style.fontSize = (windowWidth / 90) + "px";
                     document.getElementById("project-title-two").style.fontSize = (windowWidth / 90) + "px";
                     document.getElementById("project-title-three").style.fontSize = (windowWidth / 90) + "px";
+                    document.getElementById("tutorials-section").style.width = (document.getElementById("lisbon").clientWidth) + "px";
+                    document.getElementById("tutorials-section").style.height = windowHeight + "px";
+                    document.getElementById("tutorial-one").style.width = (document.getElementById("lisbon").clientWidth / 2) + "px";
+                    document.getElementById("tutorial-one").style.height = (windowHeight / 2) + "px";
+                    document.getElementById("tutorial-two").style.width = (document.getElementById("lisbon").clientWidth / 2) + "px";
+                    document.getElementById("tutorial-two").style.height = (windowHeight / 2) + "px";
+                    document.getElementById("tutorial-two").style.marginLeft = (document.getElementById("lisbon").clientWidth / 2) + "px";
+                    document.getElementById("tutorial-three").style.width = (document.getElementById("lisbon").clientWidth / 2) + "px";
+                    document.getElementById("tutorial-three").style.height = (windowHeight / 2) + "px";
+                    document.getElementById("tutorial-three").style.marginTop = (windowHeight / 2) + "px";
+                    document.getElementById("tutorial-four").style.width = (document.getElementById("lisbon").clientWidth / 2) + "px";
+                    document.getElementById("tutorial-four").style.height = (windowHeight / 2) + "px";
+                    document.getElementById("tutorial-four").style.marginTop = (windowHeight / 2) + "px";
+                    document.getElementById("tutorial-four").style.marginLeft = (document.getElementById("lisbon").clientWidth / 2) + "px";
+                    document.getElementById("project-container").style.height = (windowHeight + 35) + "px";
+                    document.getElementById("tutorials-section").style.marginTop = (document.getElementById("lisbon").clientHeight + document.getElementById("project-container").clientHeight + "px");
 
                 }
 
@@ -160,6 +177,24 @@
 
             }
 
+            function jumptoTutorials() {
+
+                scrollTo(document.getElementById('tutorial-one'), 3000);
+    
+            }
+
+            function jumptoProjects() {
+
+                scrollTo(document.getElementById('projects-section'), 1000);
+
+            }
+
+            /*function jumptoProjects() {
+
+                scrollTo(document.getElementById('projects-section'), 3000);
+
+            }*/
+
         </script>
 
     </head>
@@ -191,9 +226,9 @@
                 <script>document.getElementById("top-menu").style.marginLeft = ((windowWidth - 677) / 2) + "px";</script>
 
                 <span class="menuItem">Home</span>
-                <span style="margin-left:10px;" class="menuItem">Tutorials</span>
-                <span style="margin-left:10px;" class="menuItem">Projects</span>
-                <span style="margin-left:10px;" class="menuItem">Contact</span>
+                <span onClick="jumptoTutorials()" style="margin-left:10px;" class="menuItem">Tutorials</span>
+                <span onClick="jumptoProjects()" style="margin-left:10px;" class="menuItem">Projects</span>
+                <span onClick="jumptoContact()" style="margin-left:10px;" class="menuItem">Contact</span>
 
             </div>
 
@@ -245,6 +280,7 @@
             
                 document.getElementById("project-container").style.width = (document.getElementById("lisbon").clientWidth) + "px";
                 document.getElementById("project-container").style.marginTop = (document.getElementById("lisbon").clientHeight) + "px";
+                document.getElementById("project-container").style.height = (windowHeight + 35) + "px";
                 
             </script>
 
@@ -331,19 +367,18 @@
             <script>
             
                 document.getElementById("tutorials-section").style.width = (document.getElementById("lisbon").clientWidth) + "px";
-                document.getElementById("tutorials-section").style.height = windowHeight + "px";
-                document.getElementById("tutorials-section").style.marginTop = (windowHeight + 1000) + "px";
+                document.getElementById("tutorials-section").style.height = (windowHeight) + "px";
+                document.getElementById("tutorials-section").style.marginTop = (document.getElementById("lisbon").clientHeight + document.getElementById("project-container").clientHeight + "px");
             
             </script>
 
             <div id="tutorial-one">
 
-                TESTE
-
                 <script>
                 
-                    document.getElementById("tutorial-one").style.width = (windowWidth / 2) + "px";
+                    document.getElementById("tutorial-one").style.width = (document.getElementById("lisbon").clientWidth / 2) + "px";
                     document.getElementById("tutorial-one").style.height = (windowHeight / 2) + "px";
+                    //document.getElementById("tutorial-one").style.backgroundSize = (windowWidth / 2) + "px " + (windowHeight / 2) + "px";
                 
                 </script>
 
@@ -353,9 +388,9 @@
 
                 <script>
                 
-                    document.getElementById("tutorial-two").style.width = (windowWidth / 2) + "px";
+                    document.getElementById("tutorial-two").style.width = (document.getElementById("lisbon").clientWidth / 2) + "px";
                     document.getElementById("tutorial-two").style.height = (windowHeight / 2) + "px";
-                    document.getElementById("tutorial-two").style.marginLeft = (windowWidth / 2) + "px";
+                    document.getElementById("tutorial-two").style.marginLeft = (document.getElementById("lisbon").clientWidth / 2) + "px";
                         
                 </script>
 
@@ -365,9 +400,9 @@
 
                 <script>
                 
-                    document.getElementById("tutorial-three").style.width = (windowWidth / 2) + "px";
+                    document.getElementById("tutorial-three").style.width = (document.getElementById("lisbon").clientWidth / 2) + "px";
                     document.getElementById("tutorial-three").style.height = (windowHeight / 2) + "px";
-                    document.getElementById("tutorial-three").style.marginTop = (windowHeight / 2) + "px";
+                    document.getElementById("tutorial-three").style.marginTop = ((windowHeight / 2) - 1) + "px";
                         
                 </script>
                 
@@ -377,10 +412,10 @@
 
                 <script>
                 
-                    document.getElementById("tutorial-four").style.width = (windowWidth / 2) + "px";
+                    document.getElementById("tutorial-four").style.width = (document.getElementById("lisbon").clientWidth / 2) + "px";
                     document.getElementById("tutorial-four").style.height = (windowHeight / 2) + "px";
-                    document.getElementById("tutorial-four").style.marginTop = (windowHeight / 2) + "px";
-                    document.getElementById("tutorial-four").style.marginLeft = (windowWidth / 2) + "px";
+                    document.getElementById("tutorial-four").style.marginTop = ((windowHeight / 2) - 1) + "px";
+                    document.getElementById("tutorial-four").style.marginLeft = (document.getElementById("lisbon").clientWidth / 2) + "px";
                                 
                 </script>                   
 

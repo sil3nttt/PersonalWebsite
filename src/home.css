@@ -29,6 +29,7 @@ body {
     color:#ebebeb;
     line-height:70px;
     vertical-align:center;
+    display:inline;
     padding-top:22px;
     padding-bottom:22px;
     padding-right:45px;
@@ -215,7 +216,6 @@ body {
 
 #project-container {
 
-    height:1000px;
     background-color:#ececec;
     position:absolute;
 
@@ -333,7 +333,6 @@ hr {
 
 #tutorials-section {
 
-    height:1000px;
     position:absolute;
     background-color:black;
 
@@ -342,8 +341,10 @@ hr {
 #tutorial-one {
 
     position:absolute;
-    background-image:url("../resources/tile-1.jpg");
+    background-color:#191919;
+    background-image:url("../resources/tile-1.png");
     background-size:contain;
+    background-position:center;
     background-repeat:no-repeat;
 
 }
@@ -351,18 +352,22 @@ hr {
 #tutorial-two {
 
     position:absolute;
-    background-image:url("../resources/tile-2.jpg");
+    background-image:url("../resources/tile-2.png");
     background-size:contain;
     background-repeat:no-repeat;
+    background-position:center;
+    background-color:#191919;
 
 }
 
 #tutorial-three {
 
     position:absolute;
-    background-image:url("../resources/tile-3.jpg");
+    background-image:url("../resources/tile-3.png");
     background-size:contain;
     background-repeat:no-repeat;
+    background-position:center;
+    background-color:#191919;
 
 }
 
@@ -372,5 +377,7 @@ hr {
     position: absolute;
     background-size:contain;
     background-repeat:no-repeat;
+    background-position:center;
+    background-color:#191919;
 
 }
